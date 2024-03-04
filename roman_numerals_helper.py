@@ -31,16 +31,3 @@ def from_roman(roman_num: str) -> int:
                 arabic[map_to_roman[row].index(num)] = row
     str_arabic = [str(x) for x in arabic[::-1]]
     return int(''.join(str_arabic).lstrip('0'))
-
-
-
-'''
-    for num in map_to_roman[4]:
-        if num in roman_num:
-            arabic[map_to_roman[4].index(num)] = 4
-            roman_num.replace(map_to_roman[4].index(num), '')
-    for num in map_to_roman[9]:
-        if num in roman_num:
-            arabic[map_to_roman[9].index(num)] = 9
-            roman_num.replace(map_to_roman[9].index(num), '')
-'''
